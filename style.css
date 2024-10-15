@@ -1,0 +1,182 @@
+/* General Rules */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a:link,
+a:visited {
+  color: #109ba0;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-inline-start: 30px;
+  margin-bottom: 20px;
+}
+
+ul li,
+ol li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/*  */
+
+body {
+  /* background-color: grey; */
+  color: #444;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 40px;
+  margin: 20px 0 60px;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.header__title {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #109ba0;
+}
+
+.nav,
+.lang-nav {
+  font-size: 18px;
+}
+
+.nav a,
+.lang-nav a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.nav a {
+  margin-inline-end: 30px;
+}
+
+.sperator {
+  margin: 0 10px;
+  color: #109ba0;
+}
+
+.article {
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.article__header {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #3d4e60;
+}
+
+.article__header::after {
+  content: "Trending 🔥";
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding: 5px 10px;
+  margin-inline-start: 20px;
+  background-color: #109ba0;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.article__icon {
+  width: 50px;
+  height: 50px;
+}
+
+#author {
+  font-size: 14px;
+}
+
+.reactions {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  padding: 20px;
+}
+
+.reactions button {
+  padding: 0 1.5px;
+  margin-inline-start: 5px;
+  cursor: pointer;
+}
+
+.article__mainImg {
+  width: 100%;
+  margin: 10px 0 40px;
+}
+
+.article__subTitle {
+  margin: 40px 0 20px;
+  color: #3d4e60;
+  font-size: 30px;
+}
+
+/* ol li::first-letter {
+  text-transform: capitalize;
+  font-weight: bold;
+} */
+
+ul li:last-child {
+  font-style: italic;
+}
+
+.relatedPosts {
+  /* display: inline-block; */
+  background-color: #f7f7f7;
+  width: 500px;
+  padding: 50px 0;
+}
+
+.relatedPosts__title {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.relatedPosts li {
+  list-style: none;
+}
+
+.relatedPosts p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+[dir="rtl"] .article__header::after {
+  content: "الأكثر مشاهدة 🔥";
+}
+
+[dir="rtl"] .reactions {
+  right: unset;
+  left: 50px;
+}

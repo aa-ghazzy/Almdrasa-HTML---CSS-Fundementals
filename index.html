@@ -3,118 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>HTML Fundemental</title>
   </head>
   <body>
     <!--  -->
-    <header>
-      <h1>✨ Almdrasa ✨</h1>
-      <nav>
-        <a href="#">Courses</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact us</a>
-        <br />
-        <a href="#">English</a>
-        |
-        <a href="index-ar.html">اللغة العربية</a>
-      </nav>
-    </header>
-    <!--  -->
-    <article>
-      <h2>The Learning Platform that you were waiting for</h2>
-      <img
-        src="img/mohamedAbysrea-image.jpg"
-        alt="picture of mohamed abusrea"
-        srcset=""
-      />
-      <p>
-        Posted by <strong>Mohamed Abusrea</strong> on Saturday, July 2nd 2022
-      </p>
-      <img
-        src="img/post-img.jpg"
-        alt="image of written code"
-        srcset=""
-        height="200"
-        width="500"
-      />
-      <p>
-        <em>Almdrasa</em> is a new learning platform that tries to fill the gab
-        in the Arabic content. The idea is to find the best programming courses
-        in the field and try to reproduce it in Arabic with high standards
-        (Audio, Video, Animations, etc).
-      </p>
-      <p>Let's learn more about Almdrasa platform.</p>
-      <h3>What makes Almdrasa the right choice for you?</h3>
-      <p>Here are 5 reasons that might convince you:</p>
-      <ol>
-        <li>
-          <strong>W</strong>e pick the courses carefully that has the best
-          reviews, good and up-to-date curriculum to reproduce it in Arabic.
-        </li>
-        <li>
-          <strong>W</strong>e raised the bar and committed to create high
-          quality courses in all aspects (Audio, Video, Visualizations, Humor,
-          etc...)
-        </li>
-        <li>
-          <strong>N</strong>o need to pay for each course. a low price yearly
-          subscription will give you access to all courses
-        </li>
-        <li><strong>C</strong>ommunicate with the instructors easily</li>
-        <li>
-          <strong>G</strong>et badges after completion of every course to won
-          prizes
-        </li>
-      </ol>
-      <p>You can learn more at <a href="http://#">Almdrasa website</a>.</p>
-      <h3>What courses do we offer?</h3>
-      <p>Currently, we have those courses and plan to create even more:</p>
-      <ul>
-        <li>HTML Fundementals</li>
-        <li>CSS Fundementals</li>
-        <li>HTML & CSS Project</li>
-        <li>Programming Fundementals</li>
-        <li>Javascript Fundementals</li>
-      </ul>
-      <p>We also plan to have a full roadmaps for different paths like:</p>
-      <ul>
-        <li>Frontend roadmap</li>
-        <li>Backend roadmap</li>
-        <li>Fullstack roadmap</li>
-      </ul>
-      <p>That's it for now. See you in the next one 👋!</p>
-      <h4>Related posts</h4>
-      <ul>
-        <li>
-          <img
-            src="img/related-1.jpg"
-            alt="pic of man typing on a labtop"
-            height="75"
-            width="75"
-          />
-          <a href="#">Get Styling with CSS</a>
-          <br />
-          <p>By mohamed abusrea</p>
-        </li>
-        <li>
-          <img
-            src="img/related-2.jpg"
-            alt="pic of lighting in the sky"
-            height="75"
-            width="75"
-          />
-          <a href="#">Getting started with javascript</a>
-          <p>By Ahmed Fathy</p>
-        </li>
-      </ul>
-    </article>
-    <footer><span>Copyright © 2022 by Almdrasa.</span></footer>
-    <!--  -->
-    <style>
-      body {
-        background-color: grey;
-      }
-    </style>
-    <!--  -->
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">✨ Almdrasa ✨</h1>
+        <nav class="nav">
+          <a href="#">Courses</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact us</a>
+        </nav>
+        <nav class="lang-nav">
+          <a href="#">English</a>
+          <span class="sperator">|</span>
+          <a href="index-ar.html">اللغة العربية</a>
+        </nav>
+      </header>
+      <!--  -->
+      <article class="article">
+        <h2 class="article__header">
+          The Learning Platform that you were waiting for
+        </h2>
+        <img
+          class="article__icon"
+          src="img/mohamed-abusrea.jpg"
+          alt="picture of mohamed abusrea"
+          srcset=""
+        />
+        <div class="reactions">
+          <button>👍Like</button><button>❤️ Love</button><button>🤝 Sub</button>
+        </div>
+        <p id="author">
+          Posted by <strong>Mohamed Abusrea</strong> on Saturday, July 2nd 2022
+        </p>
+        <img
+          class="article__mainImg"
+          src="img/post-img.jpg"
+          alt="image of written code"
+          srcset=""
+        />
+        <div class="article__text">
+          <p>
+            <em>Almdrasa</em> is a new learning platform that tries to fill the
+            gab in the Arabic content. The idea is to find the best programming
+            courses in the field and try to reproduce it in Arabic with high
+            standards (Audio, Video, Animations, etc).
+          </p>
+          <p>Let's learn more about Almdrasa platform.</p>
+        </div>
+
+        <h3 class="article__subTitle">
+          What makes Almdrasa the right choice for you?
+        </h3>
+        <p>Here are 5 reasons that might convince you:</p>
+        <ol>
+          <li>
+            <strong>W</strong>e pick the courses carefully that has the best
+            reviews, good and up-to-date curriculum to reproduce it in Arabic.
+          </li>
+          <li>
+            <strong>W</strong>e raised the bar and committed to create high
+            quality courses in all aspects (Audio, Video, Visualizations, Humor,
+            etc...)
+          </li>
+          <li>
+            <strong>N</strong>o need to pay for each course. a low price yearly
+            subscription will give you access to all courses
+          </li>
+          <li><strong>C</strong>ommunicate with the instructors easily</li>
+          <li>
+            <strong>G</strong>et badges after completion of every course to won
+            prizes
+          </li>
+        </ol>
+        <p>You can learn more at <a href="http://#">Almdrasa website</a>.</p>
+        <h3 class="article__subTitle">What courses do we offer?</h3>
+        <p>Currently, we have those courses and plan to create even more:</p>
+        <ul>
+          <li>HTML Fundementals</li>
+          <li>CSS Fundementals</li>
+          <li>HTML & CSS Project</li>
+          <li>Programming Fundementals</li>
+          <li>Javascript Fundementals</li>
+        </ul>
+        <p>We also plan to have a full roadmaps for different paths like:</p>
+        <ul>
+          <li>Frontend roadmap</li>
+          <li>Backend roadmap</li>
+          <li>Fullstack roadmap</li>
+        </ul>
+        <p>That's it for now. See you in the next one 👋!</p>
+      </article>
+      <aside class="relatedPosts">
+        <h4 class="relatedPosts__title">Related posts</h4>
+        <ul>
+          <li>
+            <img
+              src="img/related-1.jpg"
+              alt="pic of man typing on a labtop"
+              height="75"
+              width="75"
+            />
+            <a href="#">Get Styling with CSS</a>
+            <br />
+            <p>By mohamed abusrea</p>
+          </li>
+          <li>
+            <img
+              src="img/related-2.jpg"
+              alt="pic of lighting in the sky"
+              height="75"
+              width="75"
+            />
+            <a href="#">Getting started with javascript</a>
+            <p>By Ahmed Fathy</p>
+          </li>
+        </ul>
+      </aside>
+      <footer><p>Copyright © 2022 by Almdrasa.</p></footer>
+    </div>
   </body>
 </html>
